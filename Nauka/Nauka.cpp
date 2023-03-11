@@ -4,12 +4,12 @@ using namespace std;
 
 int main()
 {
-    int jarek = 75;
-    int* ap = & jarek;
+    int jarek[2] = { 1,5 };
 
-    cout << ap << endl;
-    cout << & ap << endl;
-    cout << *ap << endl;
+    int* a = jarek ;
+    int* b = jarek +2;
+    cout << a << "\n" << b << endl;
+    cout << b - a << endl;
 
 
     return 0;
