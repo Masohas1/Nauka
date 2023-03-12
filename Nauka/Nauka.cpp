@@ -1,29 +1,16 @@
 ﻿#include <iostream>
 
-void generuj(int* begin, int* end, int start)
-{
-    for (int* p = begin; p != end; ++p)
-    {
-        *p = start;
-        std::cout <<*p << std::endl;
+using namespace std;
 
-        ++start;
-    }
-}
+//void gen(int* wJarek, int number) {
+//
+//}
 
-void wypisz(int* begin, int size)
-{
-    while (size > 0)
-    {
-        std::cout << *begin << ' ';
-        ++begin;
-        --size;
-    }
-}
+int main() {
+	int jarek[2] = {1,2};
+	/*gen(jarek, 1);*/
+	cout << jarek << endl;
+	cout << jarek + 10 << endl;
 
-int main()
-{
-    int tab[10];
-    generuj(tab, tab + 10, 100);
-    wypisz(tab, 10);
+	return 0;
 }
